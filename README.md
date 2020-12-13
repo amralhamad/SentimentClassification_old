@@ -81,5 +81,13 @@ The overall accuracy over dev dataset was 70-71% using the Base classifer and 75
 &nbsp;[   4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   40&nbsp;&nbsp;&nbsp;&nbsp;  331&nbsp;&nbsp;&nbsp; 1105&nbsp;&nbsp;]]  
 ################## OVERALL ACCURACY SCORE ##################  
 0.7478330444059208  
+  
+It is woth mentioning here that the accuracies over dev dataset for labels that have been classified correctly or with one rate off (for example 4 instead of 5) were 95.6% using Base model and 97.3% using advanced models. Results are saved in the following csv files:  
+y_train_predicted_base.csv  
+y_dev_predicted_base.csv  
+y_test_predicted_base.csv  
+y_train_predicted_advanced.csv  
+y_dev_predicted_advanced.csv  
+y_test_predicted_advanced.csv
 
 ## How to run  
