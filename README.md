@@ -23,26 +23,26 @@
   Dense layer with 256 output size, relu activation and 0.3 dropout.  
   Dense layer with 5 output size and softmax activation layer.  
   Loss function: 'sparse_categorical_crossentropy', Optimizer: 'adam', metric:'accuracy'.
-- Train the model using 256 batch size and max of 15 epachs. save_best_model and early_stopping callbacks have been used.  
+- Train the model using 256 batch size and max of 15 epochs. save_best_model and early_stopping callbacks have been used.  
 - Get train and dev datasets evaluation metrics and save the predictions values in csv files.
 #### Test time  
-- Load base classifer object and it trained ML model.
+- Load base classifier object and it trained ML model.
 - Read test dataset.
 - Prepare dataset: tokenize and pad test dataset.
 - Run model prediction over test dataset.
 - Save the predictions values in a csv file.
 ### Advanced Model  
-Inherits most of its functionalites from the base classifer with the following adding functionalites:
+Inherits most of its functionalities  from the base classifier with the following adding functionalities :
 #### Train time  
 - Convert all reviews' letters to small letters.
 - Removing the "Stops Words" from all reviews. "Stop Words" are words like: 'the', 'an', ...etc. "Stop Words" values are downloaded using nltk library.
 - Global Vectors for Word Representation (GloVe) has been used to build the embedding layer. Pretrained glove.840B.300d words vectors has been used for this purpose. Pretrained words vectors can be found in: https://nlp.stanford.edu/projects/glove/
-- A bigger dense-layers network has been used to build the model (4 dense layers with output sizes: 256, 128, 64, 32 respectively, and 'relu' activation function and 0.2 dropout, followed by 1 5-output size softmax layer have been used). It is worth mentioning here that the advanced classifier has much less trainable parameters than the Base classifer since the embedding layer is already pretrained. 
+- A bigger dense-layers network has been used to build the model (4 dense layers with output sizes: 256, 128, 64, 32 respectively, and 'relu' activation function and 0.2 dropout, followed by 1 5-output size softmax layer have been used). It is worth mentioning here that the advanced classifier has much less trainable parameters than the Base classifier since the embedding layer is already pretrained. 
 #### Test time  
-- Exactly similar functionalites to the base classifier.
+- Exactly similar functionalities to the base classifier.
 
 ## Results  
-The overall accuracy over dev dataset was 70-71% using the Base classifer and 75-76% using the advanced classifer. This shows the superiority of using the advanced classifer (higher accuracy with less number of trainable parameters and faster training time). For training datasets, the overall accuracy was 91% using Base Classifier and aroung 77% using the advanced classifer. This might means that the Base classifer overfits the training dataset and this is expected since the embedding layer is trainable (so only train data has been used to train the embedding layer). The confusion matrices (whose i-th row and j-th column entry indicates the number of samples with true label being i-th class and prediced label being j-th class) and the accuracies for train and dev datasets are listed below:
+The overall accuracy over dev dataset was 70-71% using the Base classifier and 75-76% using the advanced classifier. This shows the superiority of using the advanced classifier (higher accuracy with a smaller number of trainable parameters and faster training time). For training datasets, the overall accuracy was 91% using Base Classifier and around 77% using the advanced classifier. This might mean that the Base classifier overfits the training dataset and this is expected since the embedding layer is trainable (so only train data has been used to train the embedding layer). The confusion matrices (whose i-th row and j-th column entry indicates the number of samples with true label being i-th class and predicted label being j-th class) and the accuracies for train and dev datasets are listed below:
 ### Using Base Classifier
 #### Train data:
 ################## CONFUSION MATRIX ##################  
@@ -82,7 +82,7 @@ The overall accuracy over dev dataset was 70-71% using the Base classifer and 75
 ################## OVERALL ACCURACY SCORE ##################  
 0.7478330444059208  
   
-It is woth mentioning here that the accuracies over dev dataset for labels that have been classified correctly or with one rate off (for example 4 instead of 5) were 95.6% using Base model and 97.3% using advanced models. Results are saved in the following csv files:  
+It is worth mentioning here that the accuracies over dev dataset for labels that have been classified correctly or with one rate off (for example 4 instead of 5) were 95.6% using Base model and 97.3% using advanced models. Results are saved in the following csv files:  
 y_train_predicted_base.csv  
 y_dev_predicted_base.csv  
 y_test_predicted_base.csv  
@@ -91,14 +91,14 @@ y_dev_predicted_advanced.csv
 y_test_predicted_advanced.csv
 
 ## How to run  
-Used base and advanced classifiers are saved in base_classifier.pkl and advanced_classifier.pkl respectively. The best ML models are saved in best_base_model.hdf5 and best_advanced_model.hdf5 for both classifiers. To retrain base of advanced classifiers, follwoing commands should be used:  
+Used base and advanced classifiers are saved in base_classifier.pkl and advanced_classifier.pkl respectively. The best ML models are saved in best_base_model.hdf5 and best_advanced_model.hdf5 for both classifiers. To retrain base of advanced classifiers, following commands should be used:  
 
 - Train Base Classifier:  
 python TrainBaseClassifier.py sentiment_dataset_train.csv sentiment_dataset_dev.csv  
 - Train Advanced Classifier:  
 python TrainAdvancedClassifier.py sentiment_dataset_train.csv sentiment_dataset_dev.csv ./glove.840B.300d/glove.840B.300d.txt  
 
-To use the trained classifier for prediction/inference (can be done without retraining the model), the follwing commands should be used:  
+To use the trained classifier for prediction/inference (can be done without retraining the model), the following commands should be used:  
 - Predict Base Classifier:  
 python PredictBaseClassifier.py sentiment_dataset_test.csv   
 - Predict Advanced Classifier:  
