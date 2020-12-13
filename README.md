@@ -8,6 +8,7 @@
 - nltk
 - sys
 - pickle
+- sklearn
 
 ## Used Models  
 ### Base Model  
@@ -41,7 +42,7 @@ Inherits most of its functionalites from the base classifer with the following a
 - Exactly similar functionalites to the base classifier.
 
 ## Results  
-The overall accuracy over dev dataset was 70-71% using the Base classifer and 75-76% using the advanced classifer. This shows the superiority of using the advanced classifer (higher accuracy with less number of trainable parameters and faster training time). For training datasets, the overall accuracy was 91% using Base Classifier and aroung 77% using the advanced classifer. This might means that the Base classifer overfits the training dataset and this is expected since the embedding layer is trainable (so only train data has been used to train the embedding layer). The confusion matrices and the accuracies for train and dev datasets are listed below:
+The overall accuracy over dev dataset was 70-71% using the Base classifer and 75-76% using the advanced classifer. This shows the superiority of using the advanced classifer (higher accuracy with less number of trainable parameters and faster training time). For training datasets, the overall accuracy was 91% using Base Classifier and aroung 77% using the advanced classifer. This might means that the Base classifer overfits the training dataset and this is expected since the embedding layer is trainable (so only train data has been used to train the embedding layer). The confusion matrices (whose i-th row and j-th column entry indicates the number of samples with true label being i-th class and prediced label being j-th class) and the accuracies for train and dev datasets are listed below:
 ### Using Base Classifier
 #### Train data:
 ################## CONFUSION MATRIX ##################  
