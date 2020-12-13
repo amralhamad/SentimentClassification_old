@@ -47,18 +47,18 @@ The overall accuracy over dev dataset was 70-71% using the Base classifer and 75
 ################## CONFUSION MATRIX ##################  
 [[6485&nbsp;&nbsp;  460&nbsp;&nbsp;&nbsp;   65&nbsp;&nbsp;&nbsp;&nbsp;   10&nbsp;&nbsp;&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]  
 &nbsp;[261&nbsp;&nbsp;&nbsp; 6278&nbsp;&nbsp;  465&nbsp;&nbsp;&nbsp;   19&nbsp;&nbsp;&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]  
-&nbsp;[13&nbsp;&nbsp;  219&nbsp; 6345  361&nbsp;   33&nbsp;&nbsp;]  
-&nbsp;[10&nbsp;&nbsp;    9&nbsp;&nbsp;&nbsp;  211&nbsp; 6543  224&nbsp;]  
-&nbsp;[1&nbsp;&nbsp;&nbsp;    2&nbsp;&nbsp;&nbsp;   14&nbsp;&nbsp;  692&nbsp; 6268]]  
+&nbsp;[13&nbsp;&nbsp;&nbsp;&nbsp;  219&nbsp;&nbsp;&nbsp; 6345&nbsp;&nbsp;  361&nbsp;&nbsp;&nbsp;   33&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[10&nbsp;&nbsp;&nbsp;&nbsp;    9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  211&nbsp;&nbsp;&nbsp; 6543&nbsp;&nbsp;  224&nbsp;&nbsp;&nbsp;]  
+&nbsp;[1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   14&nbsp;&nbsp;&nbsp;&nbsp;  692&nbsp;&nbsp;&nbsp; 6268&nbsp;&nbsp;]]  
 ################## OVERALL ACCURACY SCORE ##################  
 0.9118672151754085  
 #### Dev Data:  
 ################## CONFUSION MATRIX ##################  
-[[1121  278   95    17    12]  
- [226   933   298   40    10]  
- &nbsp;[45   	182   1022  207   27]  
- &nbsp;[11    21    165   1152  151]  
- &nbsp;[4     10    34    345   1093]]  
+[[1121&nbsp;&nbsp;  278&nbsp;&nbsp;&nbsp;   95&nbsp;&nbsp;&nbsp;&nbsp;    17&nbsp;&nbsp;&nbsp;&nbsp;    12&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[226&nbsp;&nbsp;&nbsp;   933&nbsp;&nbsp;&nbsp;   298&nbsp;&nbsp;&nbsp;   40&nbsp;&nbsp;&nbsp;&nbsp;    10&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[45&nbsp;&nbsp;&nbsp;&nbsp;   	182&nbsp;&nbsp;&nbsp;   1022&nbsp;&nbsp;  207&nbsp;&nbsp;&nbsp;   27&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[11&nbsp;&nbsp;&nbsp;&nbsp;    21&nbsp;&nbsp;&nbsp;&nbsp;    165&nbsp;&nbsp;&nbsp;   1152&nbsp;&nbsp;  151&nbsp;&nbsp;&nbsp;]  
+&nbsp;[4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     10&nbsp;&nbsp;&nbsp;&nbsp;    34&nbsp;&nbsp;&nbsp;&nbsp;    345&nbsp;&nbsp;&nbsp;   1093&nbsp;&nbsp;]]  
 ################## OVERALL ACCURACY SCORE ##################  
 0.7095612748366449  
 ### Using Advanced Classifer
