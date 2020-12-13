@@ -93,15 +93,15 @@ y_test_predicted_advanced.csv
 ## How to run  
 Used base and advanced classifiers are saved in base_classifier.pkl and advanced_classifier.pkl respectively. The best ML models are saved in best_base_model.hdf5 and best_advanced_model.hdf5 for both classifiers. To retrain base of advanced classifiers, follwoing commands should be used:  
 
-- Train Base Classifier:
+- Train Base Classifier:  
 python TrainBaseClassifier.py sentiment_dataset_train.csv sentiment_dataset_dev.csv  
-- Train Advanced Classifier:
+- Train Advanced Classifier:  
 python TrainAdvancedClassifier.py sentiment_dataset_train.csv sentiment_dataset_dev.csv ./glove.840B.300d/glove.840B.300d.txt  
 
 To use the trained classifier for prediction/inference (can be done without retraining the model), the follwing commands should be used:  
-- Predict Base Classifier:
+- Predict Base Classifier:  
 python PredictBaseClassifier.py sentiment_dataset_test.csv   
-- Predict Advanced Classifier:
+- Predict Advanced Classifier:  
 python PredictAdvancedClassifier.py sentiment_dataset_test.csv   
 
 
