@@ -64,20 +64,20 @@ The overall accuracy over dev dataset was 70-71% using the Base classifer and 75
 ### Using Advanced Classifer
 #### Train data:
 ################## CONFUSION MATRIX ##################  
-[[6020  823  147   12   26]  
- [1106 4779 1083   44   19]  
- [ 218  620 5573  508   52]  
- [  33   70  915 5411  568]  
- [  13   14  120 1525 5305]]  
+[[6020&nbsp;&nbsp;  823&nbsp;&nbsp;&nbsp;  147&nbsp;&nbsp;&nbsp;   12&nbsp;&nbsp;&nbsp;&nbsp;   26&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[1106&nbsp;&nbsp; 4779&nbsp;&nbsp; 1083&nbsp;&nbsp;   44&nbsp;&nbsp;&nbsp;&nbsp;   19&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[ 218&nbsp;&nbsp;&nbsp;  620&nbsp;&nbsp;&nbsp; 5573&nbsp;&nbsp;  508&nbsp;&nbsp;&nbsp;   52&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[  33&nbsp;&nbsp;&nbsp;&nbsp;   70&nbsp;&nbsp;&nbsp;&nbsp;  915&nbsp;&nbsp;&nbsp; 5411&nbsp;&nbsp;  568&nbsp;&nbsp;&nbsp;]  
+&nbsp;[  13&nbsp;&nbsp;&nbsp;&nbsp;   14&nbsp;&nbsp;&nbsp;&nbsp;  120&nbsp;&nbsp;&nbsp; 1525&nbsp;&nbsp; 5305&nbsp;&nbsp;]]  
 ################## OVERALL ACCURACY SCORE ##################  
 0.7738544166380985  
 #### Dev data:
 ################## CONFUSION MATRIX ##################  
-[[1266  204   39    6    8]  
- [ 284  947  258   10    8]  
- [  52  129 1184  110    8]  
- [   5   15  231 1106  143]  
- [   4    6   40  331 1105]]  
+[[1266&nbsp;&nbsp;  204&nbsp;&nbsp;&nbsp;   39&nbsp;&nbsp;&nbsp;&nbsp;    6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[ 284&nbsp;&nbsp;&nbsp;  947&nbsp;&nbsp;&nbsp;  258&nbsp;&nbsp;&nbsp;   10&nbsp;&nbsp;&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[  52&nbsp;&nbsp;&nbsp;&nbsp;  129&nbsp;&nbsp;&nbsp; 1184&nbsp;&nbsp;  110&nbsp;&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]  
+&nbsp;[   5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   15&nbsp;&nbsp;&nbsp;&nbsp;  231&nbsp;&nbsp;&nbsp; 1106&nbsp;&nbsp;  143&nbsp;&nbsp;&nbsp;]  
+&nbsp;[   4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   40&nbsp;&nbsp;&nbsp;&nbsp;  331&nbsp;&nbsp;&nbsp; 1105&nbsp;&nbsp;]]  
 ################## OVERALL ACCURACY SCORE ##################  
 0.7478330444059208  
 
