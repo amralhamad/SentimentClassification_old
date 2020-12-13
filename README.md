@@ -45,11 +45,14 @@ The overall accuracy over dev dataset was 70-71% using the Base classifer and 75
 ### Using Base Classifier
 #### Train data:
 ################## CONFUSION MATRIX ##################  
-[[6485  460   65   10    8]  
- [ 261 6278  465   19    8]  
- [  13  219 6345  361   33]  
- [  10    9  211 6543  224]  
- [   1    2   14  692 6268]]  
+$$\begin{array}{ccc}
+[[6485  460   65   10    8]  \\
+ [ 261 6278  465   19    8]  \\
+ [  13  219 6345  361   33]  \\
+ [  10    9  211 6543  224]  \\
+ [   1    2   14  692 6268]]  \\
+\end{array}$$
+
 
 ################## OVERALL ACCURACY SCORE ##################  
 0.9118672151754085  
