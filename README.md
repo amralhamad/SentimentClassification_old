@@ -15,11 +15,11 @@
 3- Convert train and dev reviews (words) to tokens (integers).  
 4- Pad all reviews (with zeros from the end) so they all have same length. Padding length is equal to the length of the longest review.  
 5- Build Machine Learning Model:  
-  - Embedding layer to be trained.
-  - Bidirectional LSTM layer with 64 units and 0.2 dropout.
-  - Dense layer with 256 output size, relu activation and 0.3 dropout.
-  - Dense layer with 5 output size and softmax activation layer.
-  - Loss function: 'sparse_categorical_crossentropy', Optimizer: 'adam', metric:'accuracy'
+  Embedding layer to be trained.
+  Bidirectional LSTM layer with 64 units and 0.2 dropout.
+  Dense layer with 256 output size, relu activation and 0.3 dropout.
+  Dense layer with 5 output size and softmax activation layer.
+  Loss function: 'sparse_categorical_crossentropy', Optimizer: 'adam', metric:'accuracy'
 #### Test time  
 
 ### Advanced Model  
