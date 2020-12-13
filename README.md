@@ -44,29 +44,15 @@ Inherits most of its functionalites from the base classifer with the following a
 The overall accuracy over dev dataset was 70-71% using the Base classifer and 75-76% using the advanced classifer. This shows the superiority of using the advanced classifer (higher accuracy with less number of trainable parameters and faster training time). For training datasets, the overall accuracy was 91% using Base Classifier and aroung 77% using the advanced classifer. This might means that the Base classifer overfits the training dataset and this is expected since the embedding layer is trainable (so only train data has been used to train the embedding layer). The confusion matrices and the accuracies for train and dev datasets are listed below:
 ### Using Base Classifier
 #### Train data:
-################## CONFUSION MATRIX ##################  
+################## CONFUSION MATRIX ##################
+[[6485 460<space>   65<space><space>   10<space><space>    8<space><space><space>]
+ [ 261<space> 6278  465<space>   19<space><space>    8<space><space><space>]
+ [  13<space><space>  219<space> 6345  361<space>   33<space><space>]
+ [  10<space><space>    9<space><space><space>  211<space> 6543  224<space>]
+ [   1<space><space><space>    2<space><space><space>   14<space><space>  692<space> 6268]]
 
-    [ 6484 460&nbsp; 65&nbsp;&nbsp; 10&nbsp;&nbsp; ]
-    [ 261&nbsp; 6278 465&nbsp; 19&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;]
-
-
-$$\begin{array}{ccc}
-[[6485  460&nbsp;   65&nbsp;&nbsp;   10&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;]  \\
- [261&nbsp; 6278  465&nbsp;   19&nbsp;&nbsp;    8&nbsp;&nbsp;&nbsp;]  \\
- [  13&nbsp;&nbsp;  219&nbsp; 6345  361&nbsp;   33&nbsp;&nbsp;]  \\
- [  10    9  211 6543  224]  \\
- [   1    2   14  692 6268]]  \\
-\end{array}$$
-
-[[1266  204   39    6    8]  
- [ 284  947  258   10    8]  
- [  52  129 1184  110    8]  
- [   5   15  231 1106  143]  
- [   4    6   40  331 1105]]  
-
-
-################## OVERALL ACCURACY SCORE ##################  
-0.9118672151754085  
+################## OVERALL ACCURACY SCORE ##################
+0.9118672151754085 
 #### Dev Data:
 ################## CONFUSION MATRIX ##################  
 
