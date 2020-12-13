@@ -95,7 +95,7 @@ Used base and advanced classifiers are saved during training in base_classifier.
 
 - Train Base Classifier:  
 python TrainBaseClassifier.py sentiment_dataset_train.csv sentiment_dataset_dev.csv  
-- Train Advanced Classifier:  
+- Train Advanced Classifier (pretrained embeddings should be already downloaded from https://nlp.stanford.edu/projects/glove/):  
 python TrainAdvancedClassifier.py sentiment_dataset_train.csv sentiment_dataset_dev.csv ./glove.840B.300d/glove.840B.300d.txt  
 
 To use the trained classifier for prediction/inference (can be done without retraining the model if we have the saved models), the following commands should be used:  
