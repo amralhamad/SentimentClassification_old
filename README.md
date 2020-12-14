@@ -9,6 +9,8 @@
 - sys
 - pickle
 - sklearn
+- keras
+- Tensorflow
 
 ## Used Models  
 ### Base Model  
